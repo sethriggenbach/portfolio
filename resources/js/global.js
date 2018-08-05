@@ -23,12 +23,12 @@
     }
 
     function displayProjectPage(obj) {
-		addHistory('#design-page');
-
+	addHistory('#design-page');
        
         var selection = obj.getAttribute("data-name");
         $('.page').hide();
-
+	    
+	projectImagePlaceholder.src = "";
         projectNamePlaceholder.innerHTML = projectData[selection].name;
         projectDescriptionPlaceholder.innerHTML = projectData[selection].description;
         projectCompositionPlaceholder.innerHTML = projectData[selection].composition;
