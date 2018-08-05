@@ -1,0 +1,275 @@
+html {
+    padding:0;
+    margin:0;
+    width:100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color:black;
+    font-size:90%;
+    padding:0;
+    margin:0;
+}
+
+header {
+    font-size:150%;
+    text-transform: uppercase;
+    font-weight:bolder;
+}
+
+nav {
+    padding:1em;
+    height:100vh;
+    position:fixed;
+    text-align:left;
+    margin:0;
+    text-transform:uppercase;
+    width:150px;
+    z-index:2;
+}
+
+nav ul {
+    list-style: none;
+    font-size:70%;
+}
+
+nav ul li {
+    opacity:.4;
+    cursor:pointer;
+    transition:.3s;
+}
+
+nav ul li:hover {
+    opacity:1;
+}
+
+nav ul li.active {
+    opacity:1;
+    
+}
+
+.page-link {
+    padding:0 1%;
+    display:block;
+}
+
+.page {
+    padding:1em 0 .25em 180px;
+    margin:0;
+    background-color: white;
+    height:100vh;
+}
+
+.hidden {
+    display:none;
+}
+
+h2 {
+    font-size:1em;
+}
+
+img {
+    max-width:100%;
+
+}
+
+button {
+    background-color: black;
+    border:none;
+    padding:1em;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+    margin:1.5em auto;
+    display:block;
+    width:100%;
+    color:white;
+}
+
+button:hover {
+    opacity:.6;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+}
+
+.bold {
+    font-weight:700;
+}
+
+.centered {
+    text-align:center;
+}
+
+.gallery-thumb {
+    width:20vw;
+    height:20vw;
+    padding:.5em;
+    margin:3em;
+    cursor:pointer;
+    transition:.3s;
+    display:inline-block;
+    text-align:center;
+    vertical-align:top;
+    opacity:.7;
+    color:black;
+    font-size:60%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.gallery-img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:20vw;
+    width:20vw;
+}
+
+
+.gallery-thumb:hover {
+    opacity:1;
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.brand-link, .category-link {
+    opacity:.4;
+    cursor:pointer;
+    font-weight:700;
+    padding:0 1%;
+    transition:.3s;
+    list-style: none;
+}
+
+.brand-link:hover, .category-link:hover {
+    opacity:1;
+}
+
+.brand-link.active, .category-link.active {
+    opacity:1;
+}
+
+
+
+.col-info {
+    width:40%;
+    height:100%;
+    display:inline-block;
+    vertical-align:top;
+
+}
+
+.col-img {
+    width:55%;
+    display:inline-block;
+    vertical-align:top;
+    text-align:center;
+    margin-right:1em;
+}
+
+#splash-page {
+    width:100%;
+    height:100%;
+    position:fixed;
+    background-image: url('../images/backgrounds/splash.jpeg');
+    background-size: cover;
+}
+
+#about-page {
+    width:100%;
+    height:100%;
+    position:fixed;
+    background-image: url('../images/backgrounds/about.jpeg');
+    background-size: cover;
+    
+
+}
+
+#contact-page {
+    width:100%;
+    height:100%;
+    position:fixed;
+    background-image: url('../images/backgrounds/contact.jpeg');
+    background-size: cover;
+}
+
+.total-center {
+    text-align:left;
+    width:33%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@media (max-width: 600px) {
+    .gallery-thumb {
+        display:block;
+        width:70vw;
+        height:70vw;
+        margin:3em auto;
+    }
+    .gallery-img {
+        width:inherit;
+        height:inherit;
+    }
+    header {
+        padding:1em 0 0 0;
+        font-size:200%;
+    }
+    
+    nav {
+        width:100%;
+        text-align:center;
+        height:auto;
+        position:static;
+        padding:0;
+    }
+
+    nav ul {
+        padding:0; 
+        font-size:120%;
+
+    }
+    nav ul li, .page-link {
+        display:inline-block;
+    }
+
+    .col-img {
+        display:block;
+        width:100%;
+        margin:0;
+    }
+
+    .col-info {
+        width:100%;
+        display:block;
+    }
+    
+    .page {
+        height:initial;
+        padding:0;
+        margin:0
+
+    }
+
+    #project-page {
+            height:initial;
+            padding:0 1em;
+    }
+
+
+    .total-center {
+        top:30%;
+        width:80%;
+        text-align:center;
+
+    }
+
+}
