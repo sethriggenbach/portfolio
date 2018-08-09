@@ -29,7 +29,6 @@ var projectData = {
         description:"CYCLES is comprised of 6 atmospheric piano pieces that I composed in early 2018. I hand-coded a mobile-friendly, responsive website with a custom-made audio player that utilizes the HTML5 audio API",
         composition:"HTML5 / JAVASCRIPT / JQUERY / CSS3",
     },
-
     "FRAGMENTS": {
         name:"FRAGMENTS",
         image:"./resources/images/projects/full/fragments.jpg",
@@ -39,6 +38,16 @@ var projectData = {
         category2:undefined,
         description:"FRAGMENTS is an album of short, evocative songs with limited structure and string orchestra accompaniment. I composed the pieces featured on FRAGMENTS in 2017, and performed the vocals, piano, and guitar myself in my home studio.",
         composition:"Piano / Vocals / Guitar / String Orchestra",
+    },
+    "ZERO FOUND": {
+        name:"ZERO FOUND",
+        image:"./resources/images/projects/full/zero-found.png",
+        thumbnail:"./resources/images/projects/thumb/zero-found.jpg",
+        webUrl:"https://zerofound.bandcamp.com/",
+        category1:"Music",
+        category2:undefined,
+        description:"ZERO FOUND is a garage rock band originally based in Denver, Colorado. I created the album artwork by hand-carving a linoleum block to create a gritty print in black ink. I created the band's logo in Adobe Illustrator. The band uses Bandcamp to manage their website, and I designed the overall look, feel and color scheme.",
+        composition:"Lino Print / Adobe Illustrator",
     },
     "Listening Spaces Subreddit": {
         name:"Listening Spaces Subreddit",
