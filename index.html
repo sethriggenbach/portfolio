@@ -1,133 +1,62 @@
-
 <!DOCTYPE html>
-
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<link rel="stylesheet" id="base-style" type="text/css" href="./resources/css/normalize.css">
 	<link rel="stylesheet" id="base-style" type="text/css" href="./resources/css/style.css">
-	<title>Watch Explorer | Try on your favorite watches!</title>
+	<title>Seth Riggenbach | Digital Portfolio</title>
 </head>
 <body>
-
-	<div id="search-container">
-			<form id="search-form">
-					<input type="text" id="watch-search-input" placeholder="Search..."/>
-					<input type="submit" id="search-button" value=">"/>
-			</form>
-	</div>
-
-	<header><a href="">&#128339;<br>Watch Explorer</a></header>
-
-	<nav>
+	<nav role="navigation">
+		<header><a href="">Seth Riggenbach</a></header>
 		<ul class="page-select">
-			<li class="menu-item" id="about-page-link" data-link="#about-page">About</li>
-			<li class="menu-item" id="brand-page-link" data-link="#brand-page">Brands</li>
-			<li class="menu-item" id="category-page-link" data-link="#category-page">Categories</li>
+			<li class="menu-item" id="about-page-link"><a href="#about-page" class="page-link">About</a></li>
+			<li class="menu-item" id="category-page-link"><a href="#category-page" class="page-link category-filter">Design</a></li>
+			<li class="menu-item" id="contact-page-link"><a href="#contact-page" class="page-link">Contact</a></li>
 		</ul>
 	</nav>
-
-	<div id="about-page" class="page centered hidden">
-		<h1>Welcome to Watch Explorer!</h1>
-		<p>I designed this website to allow the wristwatch community to try on physical replicas of their favorite watches free of charge.</p>
-		<p>Each watch page contains a true-to-scale PDF that you can print, cut, and try on!</p>
-	</div>	
-
-
-	<div id="watch-page" class="hidden page">
-
-		
+	<div id="project-page" class="page hidden">
 		<div class="col-img">
-			
-			<div id="watch-image-wrapper">
-				<img src="" id="watch-image"/>
+			<div id="project-image-wrapper">
+				<img src="" id="project-image"/>
 			</div>
-			
-			<a href="" target="_blank" id="pdf-link"><button class="btn-pdf">Download Paper Model</button></a>
-			<a href="" target="_blank" id="amazon-link"><button class="btn-amazon">Buy on Amazon</button></a>
-
-		
+			<a href="" target="_blank" id="external-project-link"><button>Visit Website</button></a>
 		</div>
 		<div class="col-info">
-			<h2 id="watch-brand">Watch Brand Here</h2>
-			<h1 id="watch-model">Watch Name Here</h1>
-
+			<h1 id="project-name">Project Name Here</h1>
 			<h2>Description</h2>
-			<p id="watch-description">Watch Description Here</p>
-
-			<h2>Specifications</h2>
-			<table id="watch-specifications">
-				<tr>
-					<td class="bold">Case Size:</td>
-					<td id="case-size"></td>
-				</tr>
-				<tr>
-					<td class="bold">Case Material:</td>
-					<td id="case-material"></td>
-				</tr>			
-				<tr>
-					<td class="bold">Case Shape:</td>
-					<td id="case-shape"></td>
-				</tr>
-				<tr>
-					<td class="bold">Dial Color:</td>
-					<td id="dial-color"></td>
-				</tr>					
-			</table>
+			<p id="project-description">Project Description Here</p>
+			<h2>Composition</h2>
+			<p id="project-composition">Project Description Here</p>
 		</div>
-
-
 	</div>
 
-	<div id="brand-page" class="hidden page">
-		<ul id="brand-list"></ul>
+	<div id="splash-page" class="page">
+		<div class="total-center">
+			<h1>I like to keep things simple.</h1>
+			<p>Welcome to my portfolio.</p>
+		</div>
 	</div>
 
-	<div id="category-page" class="hidden page">
-			<ul id="category-list"></ul>
-	</div>
-	
-	
-	<div id="search-page" class="hidden page">
-		<h2 id="search-title"></h2>
+	<div id="about-page" class="page hidden">
+		<div class="total-center">
+			<h1>About me.</h1>
+			<p>My name is Seth Riggenbach and I'm a web developer, composer and financial consultant living in Charlotte, NC.</p>
+		</div>
 	</div>
 
-	<footer>
-		<div class="footer-block">
-			<h3>Mailing List</h3>
-			<ul>
-				<li><input type="text" placeholder="Enter email address"></li>
-			</ul>
+	<div id="category-page" class="page hidden"></div>
+
+	<div id="contact-page" class="page hidden">
+		<div class="total-center">
+			<h1>Shoot me an email.</h1>
+			<p><a href="mailto:sethriggenbach@gmail.com">sethriggenbach@gmail.com</a></p>
 		</div>
-		<div class="footer-block">
-			<h3>Social Media</h3>
-			<ul>
-				<li>Facebook</li>
-				<li>Twitter</li>
-				<li>Instagram</li>
-			</ul>
-		</div>
-		<div class="footer-block">
-			<h3>Help</h3>
-			<ul>
-				<li>Instructions</li>
-				<li>Contact</li>
-			</ul>
-		</div>
-		<div class="footer-block">
-			<h3>Request a Watch</h3>
-			<ul>
-				<li>Submit a new request</li>
-			</ul>
-		</div>
-	</footer>
+	</div>
 
 	<script src="./resources/js/lib/jquery.min.2.1.1.js" type="text/javascript"></script>
 	<script src="./resources/js/lib/jquery.ui.1.12.1.js" type="text/javascript"></script>
-	<script src="./resources/js/master-watch-list.js" type="text/javascript"></script>
+	<script src="./resources/js/master-project-list.js" type="text/javascript"></script>
 	<script src="./resources/js/global.js" type="text/javascript"></script>
-
-
 </body>
 </html>
